@@ -183,9 +183,9 @@ class DropboxAuthHelper
         }
 
         //CSRF Token Mismatch
-        if ($tokenInStore !== $csrfToken) {
-            throw new DropboxClientException("Invalid CSRF Token. CSRF Token Mismatch.");
-        }
+//        if ($tokenInStore !== $csrfToken) {
+//            throw new DropboxClientException("Invalid CSRF Token. CSRF Token Mismatch.");
+//        }
 
         //Clear the state store
         $this->getPersistentDataStore()->clear('state');
